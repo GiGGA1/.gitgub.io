@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: #fffaf4;
+    color: #333;
+  }
+  
+  header {
+    background: #004d66;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+
+  .hero {
+    background: url("/pic/tbilisi-1.jpg") center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #ffa500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #004d66;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+  
+
+
+  _________javascript___________
+
+
+  #menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      background: #004d66;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    #menu-toggle {
+      display: block;
+    }
+  
+    nav a {
+      margin: 10px 0;
+    }
+  }
+
+  
+  /* Booking Form */
+#bookingForm {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #bookingForm button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #004d66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
